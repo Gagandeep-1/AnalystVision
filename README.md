@@ -42,7 +42,7 @@ The following **EDA** steps were conducted to prepare the data for analysis:
 
  2. Z-Score Analysis
 
-![Z-Score Plot for Charges] ![Screenshot](Screenshot 2025-03-17 221506.jpg)
+![Z-Score Plot for Charges] ![Screenshot] (Screenshot 2025-03-17 221506.jpg)
 - **Children**: The Z-score for **children** is 0.18, indicating that the data points for this variable are close to the mean and there are no significant outliers.
 - **BMI, Charges, Age**: The Z-scores for **BMI**, **charges**, and **age** are all 0, indicating that these variables are centered around the mean, with no extreme values detected.
 - Since the Z-scores for all numerical columns are close to 0, there were no extreme outliers found in the dataset during the **EDA** process.
