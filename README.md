@@ -1,4 +1,4 @@
-#POWEr BI REPORT
+#POWER BI REPORT
 Click Here:(https://gagandeep-1.github.io/AnalystVision/) To view the Power BI Reprt.
 # HEALTH INSURANCE ANALYSIS REPORT
 #OVERVIEW
