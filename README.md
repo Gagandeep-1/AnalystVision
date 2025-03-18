@@ -42,12 +42,17 @@ The following **EDA** steps were conducted to prepare the data for analysis:
 
  2. Z-Score Analysis
 
+
+
 ![Z-Score Plot for Charges] (Screenshot 2025-03-17 221506.jpg)
 - **Children**: The Z-score for **children** is 0.18, indicating that the data points for this variable are close to the mean and there are no significant outliers.
 - **BMI, Charges, Age**: The Z-scores for **BMI**, **charges**, and **age** are all 0, indicating that these variables are centered around the mean, with no extreme values detected.
 - Since the Z-scores for all numerical columns are close to 0, there were no extreme outliers found in the dataset during the **EDA** process.
 
 3.- Two -Tailed Annova Tests
+
+
+
 ![Two-Tailed Annova Tests](Screenshot 2025-03-17 2215569.jpg)
 - Sex vs Charges (p = 0.842): There is no significant relationship between sex and charges.Sex: Sex does not significantly affect charges.
 -Smoker vs Charges (p = 0.082): There is a borderline relationship between smoking status and charges, but it's not statistically significant at the 0.05 level.Smoking Status: Smoking status shows a borderline effect on charges, but it is not significant enough to confirm a strong relationship.
@@ -56,6 +61,9 @@ In conclusion, charges are not strongly affected by sex, region, or smoking stat
 
 
 4 Correlation Matrix:
+
+ 
+ 
  ![Correlation Matrix](Screenshot 2025-03-17 221635.png)
 - Strong Positive Correlation between Age and BMI (0.91): This indicates that as age increases, BMI tends to increase as well. This is a very strong positive relationship.
  -Moderate Positive Correlation between Age and Children (0.78): Older individuals tend to have more children.
