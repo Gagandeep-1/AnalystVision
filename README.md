@@ -40,11 +40,31 @@ The following **EDA** steps were conducted to prepare the data for analysis:
    - Outliers in the **BMI** and **Age** column were detected using **box plots**, and values that were extreme (beyond 1.5 * IQR) were flagged for review.
    - It is confirmed that the dataset contains no duplicate rows, ensuring data integrity.
 
- Z-Score Analysis
+ 2. Z-Score Analysis
 
+![Z-Score Plot for Charges] (![Screenshot](Screenshot 2025-03-17 221506.jpg)
 - **Children**: The Z-score for **children** is 0.18, indicating that the data points for this variable are close to the mean and there are no significant outliers.
 - **BMI, Charges, Age**: The Z-scores for **BMI**, **charges**, and **age** are all 0, indicating that these variables are centered around the mean, with no extreme values detected.
 - Since the Z-scores for all numerical columns are close to 0, there were no extreme outliers found in the dataset during the **EDA** process.
 
-- 
+3.- Two-Tailed Annova Tests:      (!Screenshot](Screenshot 2025-03-17 2215569.jpg)
+- Sex vs Charges (p = 0.842): There is no significant relationship between sex and charges.Sex: Sex does not significantly affect charges.
+-Smoker vs Charges (p = 0.082): There is a borderline relationship between smoking status and charges, but it's not statistically significant at the 0.05 level.Smoking Status: Smoking status shows a borderline effect on charges, but it is not significant enough to confirm a strong relationship.
+-Region vs Charges (p = 0.200): There is no significant relationship between region and charges.Region: Region does not significantly affect charges.
+In conclusion, charges are not strongly affected by sex, region, or smoking status based on the statistical analysis.
+
+4.-Correlation Matrix      (!Screenshot](Screenshot 2025-03-17 221635.png)
+- Strong Positive Correlation between Age and BMI (0.91): This indicates that as age increases, BMI tends to increase as well. This is a very strong positive relationship.
+ -Moderate Positive Correlation between Age and Children (0.78): Older individuals tend to have more children.
+ -Moderate Positive Correlation between BMI and Children (0.72): Individuals with higher BMI tend to have more children.
+ -Weak Positive Correlation between Age and Charges (0.14): There's a slight tendency for older individuals to have higher charges, but the relationship is weak.
+ -Weak Positive Correlation between BMI and Charges (0.33): There's a  tendency for individuals with higher BMI to have higher charges.
+ -Weak Negative Correlation between Children and Charges (-0.05): There's almost no correlation between the number of children and charges.
+ -No Strong Negative Correlations: There are no strong negative correlations observed in this matrix.
+
+   5. **Visualizing Results in Power BI**:
+   - **Python** scripts within Power BI were used to generate the following visualizations:
+     - **Heatmaps** for correlation analysis to visually understand relationships between variables.
+     - **ANOVA p-value heatmaps** to display which categorical variables significantly affect the **charges**.
+     - **Box plots** for **charges** by **region**, **smoker status**, and **sex** to show distribution and outliers.
 
