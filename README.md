@@ -73,6 +73,19 @@ In conclusion, charges are not strongly affected by sex, region, or smoking stat
  -Weak Negative Correlation between Children and Charges (-0.05): There's almost no correlation between the number of children and charges.
  -No Strong Negative Correlations: There are no strong negative correlations observed in this matrix.
 
+5. Pearson Correlation Coefficient (BMI vs Charges):
+** Correlation Coefficients**:
+
+- BMI vs. Charges: 0.35 (Moderate positive correlation)
+- Age vs. Charges: 0.19 (Weak positive correlation)
+- Children vs. Charges: -0.01 (Negligible correlation, almost zero)
+- Analysis:
+
+ - BMI (0.35): Still shows the strongest correlation with charges. A moderate positive correlation indicates that as BMI increases, charges tend to increase.
+ - Age (0.19): Shows a weak positive correlation. This suggests that there's a slight tendency for charges to increase with age, but the relationship is not very strong.
+ - Children (-0.01): Shows a very weak negative correlation, essentially no correlation. This indicates that the number of children has virtually no linear relationship with charges.
+
+
    5. **Visualizing Results in Power BI**:
    - **Python** scripts within Power BI were used to generate the following visualizations:
      - **Heatmaps** for correlation analysis to visually understand relationships between variables.
